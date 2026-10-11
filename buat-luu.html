@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>buat annaya yg ngeselin</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5eaf1, #e9e3f5);
+  font-family: Arial, sans-serif;
+  color: #38313a;
+}
+
+.card {
+  width: 90%;
+  max-width: 380px;
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px #4d31521a;
+  animation: masuk .6s ease;
+}
+
+h2 {
+  color: #bd7ca6;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+button {
+  background: #e9c6dc;
+  color: #493444;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 9px;
+  margin: 7px 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: .2s;
+}
+
+button:hover {
+  background: #dcaaca;
+  transform: translateY(-2px);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+  animation: masuk .5s ease;
+}
+
+.emoji {
+  font-size: 45px;
+}
+
+small {
+  color: #aaa;
+}
+
+@keyframes masuk {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- HALAMAN 1 -->
+  <section class="page active" id="p1">
+    <div class="emoji">💌</div>
+    <small>pesan khusus</small>
+    <h2>eh, lu.</h2>
+    <p>
+      iya, lu yang lagi baca ini.
+      <br>
+      jangan tanya kenapa dulu.
+      <br><br>
+      gue ada sesuatu yang mau disampein.
+    </p>
+    <button onclick="next(2)">baca dulu</button>
+  </section>
+
+  <!-- HALAMAN 2 -->
+  <section class="page" id="p2">
+    <div class="emoji">🤨</div>
+    <h2>sebelum lanjut...</h2>
+    <p>
+      gue mau nanya satu hal.
+      <br><br>
+      lu orangnya emang selalu kepo,
+      atau cuma kalau ada yang bikin penasaran?
+    </p>
+    <button onclick="next(3)">lanjut aja</button>
+  </section>
+
+  <!-- HALAMAN 3 -->
+  <section class="page" id="p3">
+    <div class="emoji">🗿</div>
+    <h2>oke, noted.</h2>
+    <p>
+      dari sini aja udah keliatan.
+      <br><br>
+      tombol disuruh klik, diklik.
+      disuruh lanjut, lanjut.
+      <br>
+      nurut banget sama website doang.
+      <br><br>
+      WKWKWK 😭
+    </p>
+    <button onclick="next(4)">bacot, lanjut</button>
+  </section>
+
+  <!-- HALAMAN 4 -->
+  <section class="page" id="p4">
+    <div class="emoji">🌷</div>
+    <h2>tapi serius bentar.</h2>
+    <p>
+      walaupun kadang lu ngeselin,
+      kadang random, kadang bikin bingung,
+      <br><br>
+      makasih ya udah jadi temen
+      yang super duper baik sama gua.
+      <br><br>
+      semoga hal-hal baik selalu datang
+      ke hidup lu.
+    </p>
+    <button onclick="next(5)">ada lanjutannya?</button>
+  </section>
+
+  <!-- HALAMAN 5 -->
+  <section class="page" id="p5">
+    <div class="emoji">👀</div>
+    <h2>jujur nih...</h2>
+    <p>
+      sebenernya gue udah mikirin
+      kata-kata yang bagus buat bagian ini.
+      <br><br>
+      tapi setelah dipikir-pikir...
+      <br><br>
+      <b>ngapain juga gue capek-capek?</b>
+      😭
+    </p>
+    <button onclick="next(6)">ANJIR LANJUT</button>
+  </section>
+
+  <!-- HALAMAN 6 -->
+  <section class="page" id="p6">
+    <div class="emoji">🤡</div>
+    <h2>plot twist.</h2>
+    <p>
+      lu kira ini surat romantis?
+      <br><br>
+      lu kira ada pengakuan rahasia?
+      <br><br>
+      lu kira bakal ada kalimat
+      yang bikin lu senyum-senyum sendiri?
+      <br><br>
+      <b>ya... nggak sepenuhnya salah sih.</b>
+    </p>
+    <button onclick="next(7)">maksudnya?!</button>
+  </section>
+
+  <!-- HALAMAN 7 -->
+  <section class="page" id="p7">
+    <div class="emoji">💀</div>
+    <h2>maksudnya...</h2>
+    <p>
+      gue cuma mau memastikan
+      kalau rasa penasaran lu
+      lebih kuat daripada rasa malu.
+      <br><br>
+      dan setelah tujuh halaman...
+      <br><br>
+      kayaknya gue udah dapet jawabannya.
+      WKWKWK 🗿
+    </p>
+    <button onclick="next(8)">terus tujuan lu apa?</button>
+  </section>
+
+  <!-- HALAMAN 8 -->
+  <section class="page" id="p8">
+    <div class="emoji">📢</div>
+    <h2>pengumuman penting.</h2>
+    <p>
+      setelah melakukan penelitian
+      selama beberapa menit,
+      gua menyimpulkan bahwa...
+      <br><br>
+      <b>LU GAMPANG BANGET DIKERJAIN.</b>
+      <br><br>
+      sekian laporan hari ini.
+    </p>
+    <button onclick="next(9)">gue kesel banget</button>
+  </section>
+
+  <!-- HALAMAN 9 -->
+  <section class="page" id="p9">
+    <div class="emoji">😌</div>
+    <h2>jangan marah dong.</h2>
+    <p>
+      santai, ini cuma bercanda.
+      <br><br>
+      <br><br>
+    
+      😭
+    </p>
+    <button onclick="next(10)">terakhir deh</button>
+  </section>
+
+  <!-- HALAMAN 10 -->
+  <section class="page" id="p10">
+    <div class="emoji">🫶</div>
+    <h2>oke, pesan terakhir.</h2>
+    <p>
+      jaga kesehatan, jangan kebanyakan
+      mikirin hal yang nggak penting, 
+      dan jangan lupa bahagia.
+      <br><br>
+      makasih udah baca sampai akhir.
+      <br><br>
+      <b>oh iya, satu hal lagi...</b>
+    </p>
+    <button onclick="next(11)">apaan lagi?!</button>
+  </section>
+
+  <!-- HALAMAN 11 -->
+  <section class="page" id="p11">
+    <div class="emoji">🗿</div>
+    <h2>UDAH WOI WKWKWK</h2>
+    <p>
+      TAMAT.
+      <br><br>
+      lu beneran baca semuanya?
+      <br><br>
+      makasih atas kontribusi lu
+      dalam proyek kegabutan ini.
+      <br><br>
+      <small>dibuat oleh ardan si lantam.</small>
+    </p>
+    <button onclick="location.reload()">ulang dari awal ↻</button>
+  </section>
+
+</div>
+
+<script>
+function next(n) {
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.remove("active");
+  });
+
+  document.getElementById("p" + n).classList.add("active");
+}
+</script>
+
+</body>
+</html>
